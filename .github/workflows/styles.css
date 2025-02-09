@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid Menu Ikon */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling for Links */
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px); /* Slight hover lift effect */
+}
+
+.menu-link img {
+    transition: transform 0.3s;
+}
+
+.menu-link:hover img {
+    transform: scale(1.1); /* Slight zoom effect on icon */
+}
+
+/* Google Sheet Embed */
+.google-sheet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.google-sheet h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Mengubah grid menjadi 2 kolom untuk tablet dan layar lebih kecil */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mengubah ukuran font pada item menu untuk tampilan yang lebih kecil */
+    .item p {
+        font-size: 14px;
+    }
+
+    /* Mengurangi padding di grid */
+    .item {
+        padding: 15px;
+    }
+
+    /* Menyesuaikan ukuran gambar untuk tampilan lebih kecil */
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mengubah grid menjadi 1 kolom untuk ponsel */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menyesuaikan ukuran gambar dan teks lebih kecil pada ponsel */
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item p {
+        font-size: 12px;
+    }
+
+    /* Menambahkan padding lebih banyak di grid pada layar kecil */
+    .item {
+        padding: 10px;
+    }
+}
