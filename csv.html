@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel dari CSV</title>
+    <script>
+        async function loadCSV() {
+            const response = await fetch("data.csv"); // Ganti dengan path CSV
+            const text = await response.text();
+            const rows = text.split("\n").map(row => row.split(","));
+            
+            let table = "<table border='1'>";
+            rows.forEach(row => {
+                table += "<tr>";
+                row.forEach(cell => table += `<td>${cell}</td>`);
+                table += "</tr>";
+            });
+            table += "</table>";
+            
+            document.getElementById("output").innerHTML = table;
+        }
+    </script>
+</head>
+<body onload="loadCSV()">
+    <h2>Data dari Google Sheet</h2>
+    <div id="output"></div>
+</body>
+</html>
