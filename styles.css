@@ -77,6 +77,25 @@ header .logo img {
     transform: scale(1.1); /* Efek zoom kecil saat hover */
 }
 
+table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tfoot td {
+            font-weight: bold;
+            background-color: #ddd;
+        }
+
 /* Konten Halaman Menu */
 .content {
     background-color: #fff;
