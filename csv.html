@@ -6,7 +6,7 @@
     <title>Tabel dari CSV</title>
     <script>
         async function loadCSV() {
-            const response = await fetch("data.csv"); // Ganti dengan path CSV
+            const response = await fetch("https://data.sekawan.my.id/data.csv"); // Ganti dengan path CSV
             const text = await response.text();
             const rows = text.split("\n").map(row => row.split(","));
             
