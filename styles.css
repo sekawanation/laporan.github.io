@@ -1,3 +1,4 @@
+/* Reset dan Global Style */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Container Utama */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -64,7 +66,7 @@ header .logo img {
 
 .menu-link:hover {
     background-color: #f0f0f0;
-    transform: translateY(-5px); /* Slight hover lift effect */
+    transform: translateY(-5px); /* Efek hover mengangkat */
 }
 
 .menu-link img {
@@ -72,83 +74,7 @@ header .logo img {
 }
 
 .menu-link:hover img {
-    transform: scale(1.1); /* Slight zoom effect on icon */
-}
-
-/* Google Sheet Embed */
-.google-sheet {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.google-sheet h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 14px;
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Mengubah grid menjadi 2 kolom untuk tablet dan layar lebih kecil */
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Mengubah ukuran font pada item menu untuk tampilan yang lebih kecil */
-    .item p {
-        font-size: 14px;
-    }
-
-    /* Mengurangi padding di grid */
-    .item {
-        padding: 15px;
-    }
-
-    /* Menyesuaikan ukuran gambar untuk tampilan lebih kecil */
-    .item img {
-        width: 80px;
-        height: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Mengubah grid menjadi 1 kolom untuk ponsel */
-    .grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Menyesuaikan ukuran gambar dan teks lebih kecil pada ponsel */
-    .item img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .item p {
-        font-size: 12px;
-    }
-
-    /* Menambahkan padding lebih banyak di grid pada layar kecil */
-    .item {
-        padding: 10px;
-    }
+    transform: scale(1.1); /* Efek zoom kecil saat hover */
 }
 
 /* Konten Halaman Menu */
@@ -187,5 +113,76 @@ footer p {
 
 .back-button:hover {
     background-color: #555;
-} 
+}
 
+/* Google Sheet Embed */
+.google-sheet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.google-sheet h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    /* Mengubah grid menjadi 2 kolom untuk tablet */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Mengurangi ukuran font dan padding */
+    .item p {
+        font-size: 14px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .item img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mengubah grid menjadi 1 kolom untuk ponsel */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item p {
+        font-size: 12px;
+    }
+
+    .item {
+        padding: 10px;
+    }
+}
