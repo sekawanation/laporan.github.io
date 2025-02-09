@@ -189,6 +189,8 @@ footer p {
     }
 }
 
+
+
 /* Styling untuk Tabel */
 .table-container {
     width: 100%;
@@ -242,4 +244,4 @@ tbody tr:hover {
         overflow-x: auto;
         display: block;
     }
-}
+
