@@ -1,0 +1,54 @@
+/* Styling untuk Tabel */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Agar tabel bisa di-scroll pada layar kecil */
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Efek Hover pada Baris */
+tbody tr:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.01);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Responsiveness untuk tabel */
+@media (max-width: 768px) {
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* Agar tabel tidak terpotong di layar kecil */
+    .table-container {
+        overflow-x: auto;
+        display: block;
+    }
+}
