@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Transaksi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .jumlah {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Data Transaksi</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Tanggal</th>
+                <th>Keterangan</th>
+                <th>Jumlah (Rupiah)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>01-07-2024</td>
+                <td>Pembelian Alat Tulis</td>
+                <td class="jumlah">150.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>03-07-2024</td>
+                <td>Pembayaran Listrik</td>
+                <td class="jumlah">500.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>05-07-2024</td>
+                <td>Pendapatan Penjualan</td>
+                <td class="jumlah">2.000.000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>07-07-2024</td>
+                <td>Biaya Internet</td>
+                <td class="jumlah">250.000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>10-07-2024</td>
+                <td>Gaji Karyawan</td>
+                <td class="jumlah">5.000.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
