@@ -1,0 +1,101 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Warna */
+:root {
+    --hijau: #4CAF50;
+    --biru: #2196F3;
+    --kuning: #FFC107;
+    --putih: #ffffff;
+    --hitam: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--biru);
+    padding: 15px 20px;
+    color: var(--putih);
+}
+
+.logo img {
+    width: 80px;
+}
+
+.contact p {
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: var(--hijau);
+    color: var(--putih);
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--kuning);
+    color: var(--hitam);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: var(--putih);
+    color: var(--biru);
+}
+
+/* About Section */
+.about, .waste-management {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.about-content, .content {
+    flex: 1;
+}
+
+.about-image img, .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: var(--hitam);
+    color: var(--putih);
+    padding: 10px 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .about, .waste-management {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-image img, .image img {
+        max-width: 100%;
+    }
+}
