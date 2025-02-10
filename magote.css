@@ -99,3 +99,58 @@ footer {
         max-width: 100%;
     }
 }
+
+
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background: var(--kuning);
+    text-align: center;
+}
+
+.service {
+    flex: 1;
+    max-width: 300px;
+    background: var(--putih);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: var(--hijau);
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 14px;
+    color: var(--hitam);
+}
+
+/* Hover Effect */
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        max-width: 90%;
+    }
+}
